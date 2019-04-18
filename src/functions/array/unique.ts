@@ -1,5 +1,14 @@
+/**
+ * Create an `string` without duplicates.
+ *
+ * @example
+ *
+ * unique('hello world');
+ * // => ['h', 'e', 'l', 'o', ' ', 'w', 'r', 'd'];
+ *
+ */
+
 function unique(str: string): string[];
-function unique<T>(arr: T[]): T[];
 
 /**
  * Create an `array` without duplicates.
@@ -10,6 +19,8 @@ function unique<T>(arr: T[]): T[];
  * // => [0, 1, 2, 3, 4, 5];
  *
  */
+
+function unique<T>(arr: T[]): T[];
 
 function unique(arrOrString: any): any {
   return [...new Set(arrOrString)];

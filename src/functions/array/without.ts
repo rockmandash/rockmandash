@@ -1,5 +1,14 @@
+/**
+ * Creates an array excluding all given value.
+ *
+ * @example
+ *
+ * without(['a', 'b', 'c'], 'a');
+ * // => ['b', 'c']
+ *
+ */
+
 function without<T>(arr: T[], elementToExclude: any): T[];
-function without<T>(arr: T[], arrToExclude: any[]): T[];
 
 /**
  * Creates an array excluding all given value.
@@ -10,6 +19,8 @@ function without<T>(arr: T[], arrToExclude: any[]): T[];
  * // => [2, 4]
  *
  */
+
+function without<T>(arr: T[], arrToExclude: any[]): T[];
 
 function without<T>(arr: T[], elementOrArrToExclude: any): T[] {
   if (Array.isArray(elementOrArrToExclude)) {
